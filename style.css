@@ -1,4 +1,16 @@
 body {
 	background-color: black;
 	color: gainsboro;
+	text-align: center;
+	padding: 100px;
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	color: azure;
+}
+
+#userInput {
+	width: 400px;
 }
