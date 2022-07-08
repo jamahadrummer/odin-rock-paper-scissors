@@ -47,26 +47,3 @@ if (playGame) {
 } else {
 	alert("Ok, maybe next time.")
 }
-
-
-
-// // Personal Attempts
-// const compArray = ["Rock", "Paper", "Scissors"];
-
-// function userPlay() {
-// }
-
-// function computerPlay() {
-// 	return compArray[~~(Math.random() * compArray.length)];
-// }
-
-// console.log(computerPlay());
-// console.log(computerPlay());
-// console.log(computerPlay());
-// console.log(computerPlay());
-// console.log(computerPlay());
-// console.log(computerPlay());
-// console.log(computerPlay());
-// console.log(computerPlay());
-// console.log(computerPlay());
-
