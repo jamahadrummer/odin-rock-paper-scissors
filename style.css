@@ -1,16 +1,56 @@
 body {
-	background-color: black;
-	color: gainsboro;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	color: #f2e9e4;
+	background-color: #22223B;
 	text-align: center;
-	padding: 100px;
+	width: auto;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	min-width: 450px;
+}
+
+.header{
+	display: inherit;
+	background-color: #4a4e69;
+	height: 75px;
+	flex-direction: row;
+	font-family: inherit;
+}
+
+.headerText{
+	padding: 0px 10px;
+	display: inherit;
+	align-self: center;
+	font-family: inherit;
+	font-size: 42;
 }
 
 .title {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 28px;
-	color: azure;
+	font-family: inherit;
+	font-size: 34px;
+	color: #F2E9E4;
 }
 
-#userInput {
-	width: 400px;
+.btnContainer {
+	display: inherit;
+	align-items: center;
+	gap: 50px;
+	justify-content: center;
+	height: 60px;
 }
+
+.btn {
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+	color: #22223b;
+	height: 50px;
+	width: 100px;
+	background-color: #C9ADA7;
+}
+
+
+
