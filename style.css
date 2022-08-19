@@ -52,6 +52,13 @@ body {
 	background-color: #C9ADA7;
 }
 
+.resultsContainer {
+	min-width: inherit;
+	display: inherit;
+	flex-direction: column;
+	transition: all 1s;
+}
+
 .turnContainer {
 	min-width: inherit;
 	display: inherit;
@@ -60,6 +67,29 @@ body {
 	background-color: #4a4e69;
 	flex-direction: column;
 	justify-content: space-around;
+	transition: inherit;
+}
+
+.winContainer {
+	min-width: inherit;
+	display: inherit;
+	gap: 50px;
+	height: 75px;
+	background-color: #4a4e6976;
+	flex-direction: column;
+	justify-content: space-around;
+	transition: inherit;
+}
+
+.scoreContainer {
+	min-width: inherit;
+	display: inherit;
+	gap: 50px;
+	height: 75px;
+	background-color: #4a4e691d;
+	flex-direction: column;
+	justify-content: space-around;
+	transition: inherit;
 }
 
 .content {
@@ -70,4 +100,5 @@ body {
 	align-self: center;
 	font-size: 32px;
 	justify-content: space-around;
+	transition: inherit;
 }
