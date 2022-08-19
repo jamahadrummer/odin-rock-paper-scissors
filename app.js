@@ -1,10 +1,9 @@
 function computerPlay() {
 	return computerArray[~~(Math.random() * computerArray.length)];
 }
-function playRound(playerChose) {
+function playRound(playerChose, computerChose) {
 	if (playerChose === 'rock' || playerChose === 'paper' ||
 		playerChose === 'scissors') {
-		let computerChose = computerPlay();
 		console.log("Computer played " + computerChose);
 		// Find Tie Condition
 		if (computerChose === playerChose) {
@@ -28,27 +27,29 @@ function playRound(playerChose) {
 			// Rock Breaks scissors options
 		} else if (computerChose === 'rock' && playerChose === 'scissors') {
 			winDisp.classList.add('content');
-			winDisp.textContent ='Computer wins, Rock breaks Scissors.';
+			winDisp.textContent = 'Computer wins, Rock breaks Scissors.';
 			turnCont.appendChild(winDisp);
 			addPointComputer();
 		} else if (computerChose === 'scissors' && playerChose === 'rock') {
 			winDisp.classList.add('content');
-			winDisp.textContent ='User wins, Rock breaks Scissors.';
+			winDisp.textContent = 'User wins, Rock breaks Scissors.';
 			turnCont.appendChild(winDisp);
 			addPointUser();
 			// Scissors cut Paper Options
 		} else if (computerChose === 'scissors' && playerChose === 'paper') {
 			winDisp.classList.add('content');
-			winDisp.textContent ='Computer wins, Scissors cut paper.';
+			winDisp.textContent = 'Computer wins, Scissors cut paper.';
 			turnCont.appendChild(winDisp);
 			addPointComputer();
 		} else if (computerChose === 'paper' && playerChose === 'scissors') {
 			winDisp.classList.add('content');
-			winDisp.textContent ='User wins, Scissors cut paper.';
+			winDisp.textContent = 'User wins, Scissors cut paper.';
 			turnCont.appendChild(winDisp);
 			addPointUser();
 		}
-	} return ('Computer chose')
+	}
+	let winArr = ['User Chose ', playerChose, ' Computer Chose ', computerChose]
+	console.log(winArr.join(''))
 }
 
 
@@ -70,7 +71,10 @@ let computerScore = 0;
 
 btns.forEach(btn => {
 	btn.addEventListener('click', function () {
-		playRound(btn.id)
-	})
+		let computerChose = computerPlay();
+		let winArr = ['User Chose ', btn.id, ' Computer Chose ', computerChose];
+		playRound(btn.id, computerChose);
+		console.log(winArr.join(''));
+	});
 });
 
